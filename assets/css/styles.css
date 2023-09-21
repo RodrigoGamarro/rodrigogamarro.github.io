@@ -1,35 +1,23 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /* 
-      Change favorite color
-      Default: hsl(162, 100%, 40%)
-      Orange: hsl(14, 100%, 65%) - Blue: hsl(210, 100%, 70%)
-      Pink: hsl(356, 100%, 75%) - Purple: hsl(250, 100%, 75%)
-
-      For more colors visit: https://colors.dopely.top/color-pedia
-      -> Choose any color 
-      -> click on tab (Color Conversion)
-      -> Copy the color mode (HSL)
-  */
-
-  --hue: 162;
-  --first-color: hsl(var(--hue), 100%, 40%);
-  --first-color-alt: hsl(var(--hue), 56%, 35%);
-  --title-color: hsl(228, 8%, 95%);
-  --text-color: hsl(228, 8%, 65%);
-  --body-color: hsl(228, 15%, 20%);
-  --container-color: hsl(228, 15%, 15%);
+  --hue: 150;
+  --first-color: #00FF80;
+  --first-color-alt: #00FF80;
+  --title-color: #ADB5BD;
+  --text-color: #6C757D;
+  --body-color: #0f162c;
+  --container-color:#0c1124;
+  
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Jost", sans-serif;
   --biggest-font-size: 2rem;
   --bigger-font-size: 1.25rem;
   --h1-font-size: 1.5rem;
@@ -187,7 +175,7 @@ nav {
 .nav__close {
   display: flex;
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: var(--first-color);
   cursor: pointer;
 }
 
@@ -217,7 +205,7 @@ nav {
 .nav__link {
   color: var(--title-color);
   font-weight: var(--font-medium);
-  transition: color .4s;
+  transition: color .5s;
 }
 
 .nav__link:hover {
@@ -245,7 +233,7 @@ nav {
   position: absolute;
   width: 1000%;
   height: 100%;
-  background-color: hsla(0, 0%, 10%, .3);
+  background-color: hsla(228, 50%, 10%, .3);/*hsla(0, 0%, 10%, .3)*/
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   /* For Safari*/
@@ -325,12 +313,10 @@ nav {
 
 .home__image {
   justify-self: center;
-  transition: transform .4s;
 }
 
 .home__image:hover {
-  transform: translateY(-.25rem);
-  filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
+  filter: drop-shadow(0 0px 20px hsla(var(--hue), 100%, 40%, .2));
 }
 
 .home_img {
@@ -350,7 +336,7 @@ nav {
 }
 
 .button:hover {
-  box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+  box-shadow: 0 0px 20px hsla(var(--hue), 100%, 40%, .4);
 }
 
 /*=============== ABOUT ===============*/
@@ -368,12 +354,10 @@ nav {
 
 .about__image {
   justify-self: center;
-  transition: transform .4s;
 }
 
 .about__image:hover {
-  transform: translateY(-.25rem);
-  filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
+  filter: drop-shadow(0 0px 20px hsla(var(--hue), 100%, 40%, .2));
 }
 
 .about_img {
@@ -486,7 +470,7 @@ nav {
   height: 100%;
   background: linear-gradient(180deg,
       hsla(0, 0%, 0%, 0) 0%,
-      hsla(var(--hue), 70%, 40%, .8) 120%);
+      hsla(var(--hue), 100%, 40%, .8) 120%);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   /* For Safari */
